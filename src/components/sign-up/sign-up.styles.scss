@@ -1,0 +1,16 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+
+    .title{
+        margin: 3px 0;
+        
+    }
+    .redirecting-to-sign-In{
+        margin-top: 18px;
+        .sign{
+            color: blue;
+        }
+    }
+}

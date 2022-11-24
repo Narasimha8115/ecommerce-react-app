@@ -2,7 +2,7 @@ import React from 'react';
 import './sign-in.styles.scss';
 
 import { signInWithGoogle } from '../../firebase/firebase-utils';
-
+import { Link } from 'react-router-dom';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 class SignIn extends React.Component {
@@ -56,6 +56,7 @@ class SignIn extends React.Component {
                     </CustomButton>
 
                     </div>
+                    <div className='redirecting-to-sign-up'>Don't have an account ?<Link to="/signup" className='sign'>Sign up</Link></div>
                   
 
                 </form> 
