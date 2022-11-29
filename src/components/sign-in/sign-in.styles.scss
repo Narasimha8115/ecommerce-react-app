@@ -3,10 +3,11 @@
     display: flex;
     flex-direction: column;
     
-    
-
     .title{
         margin: 10px 0px;
+    }
+    .error{
+        color: red;
     }
     .buttons{
         display: flex;
@@ -17,6 +18,9 @@
         justify-content: center;
         .sign{
             color: blue;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

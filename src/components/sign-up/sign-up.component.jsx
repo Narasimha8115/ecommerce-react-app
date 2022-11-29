@@ -28,7 +28,7 @@ class SignUp extends React.Component {
          try{
           const {user} = await auth.createUserWithEmailAndPassword(email,password);
           
-          await createUserProfileDocument(user,{displayName});
+          await createUserProfileDocument(user,displayName);
           this.setState
           ({
             displayName:'',
@@ -42,6 +42,7 @@ class SignUp extends React.Component {
     handleChange = event => {
         const {name,value} = event.target;
         this.setState({[name]:value});
+        console.log(name,value)
         
     };
     
@@ -92,7 +93,7 @@ class SignUp extends React.Component {
 
 
                     <CustomButton  type='submit'>Sign Up</CustomButton>
-                    <div className='redirecting-to-sign-In'>Don't have an account ?<Link to="/signin" className='sign'>Sign</Link></div>
+                    <div className='redirecting-to-sign-In'>Don't have an account ?<Link to="/signin" className='sign'>Sign In</Link></div>
                 </form>
 
                </div>
